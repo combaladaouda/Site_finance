@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/Assets/images/horloge-plaque-paillettes.jpg);
+    background-size: cover;
+}
+
+.principal{
+    margin: 0 auto;
+    height: 550px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin-top: 20px
+}
+
+.contenue{
+    height: 250px;
+    width: 350;
+    background-color: rgb(10, 10, 10);
+}
+
+.contenue h5{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.contenue p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.rond{
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    margin: 50px;
+}
+
+.rond1{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+    
+}
+
+.rond2{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.rond3{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
