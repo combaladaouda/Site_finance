@@ -4,20 +4,42 @@
 }
 
 body{
-    background-image: url(/Assets/images/horloge-plaque-paillettes.jpg);
+   /*  background-image: url(/Assets/images/horloge-plaque-paillettes.jpg); */
+    background-image: url(../images/horloge-plaque-paillettes.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+.retour{
+    
+   /*  height: 2rem;
+    width: 3rem;
+    border: 1px solid red; */
+}
+
+.retour img{
+    /* position: absolute; */
+    float: left;
+    position: fixed;
+    padding: 2rem;
+    height: 3rem;
+    width: 3rem;
+
 }
 
 .principal{
     margin: 0 auto;
-    height: 550px;
+    height: 600px;
     width: 350px;
-    background-color: rgba(0, 0, 0, 0.342);
-    margin-top: 20px
+    background-color: rgba(0, 0, 0, 0.493);
+    margin-top: 20px 
+    
+   
 }
 
 .contenue{
-    height: 250px;
+    height: 300px;
     width: 350;
     background-color: rgb(10, 10, 10);
 }
@@ -27,18 +49,22 @@ body{
     text-align: center;
     font-size: 2rem;
 }
+.contenue h5 a{
+    text-decoration: none;
+    color: white;
+}
 .contenue p{
     color: white;
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .rond{
     justify-content: space-between;
     text-align: center;
     display: flex;
-    margin: 50px;
+    margin: 70px;
 }
 
 .rond1{
@@ -47,6 +73,26 @@ body{
     background-color: white;
     border-radius: 100%;
     
+}
+
+img{
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+h5.index{
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+p.cle{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 60px;
+    color: rgba(255, 255, 255, 0.336);
 }
 
 .rond2{
@@ -61,4 +107,29 @@ body{
     width: 50px;
     background-color: white;
     border-radius: 100%;
+}
+
+.crypto{
+    display: inline-block;
+    justify-content: space-between
+}
+
+.crypto div{
+    height: 50px;
+    width: 350px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.crypto h4.b1{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 1rem;
+}
+.crypto .p1{
+    text-align: center;
+    font-size: 0.8rem;
 }

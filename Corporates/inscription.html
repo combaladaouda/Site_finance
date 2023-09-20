@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Assets/css/inscription.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../Assets/css/inscription.css">
+    <title>Formulaire</title>
 </head>
 <body>
-    <div class="container">
-        <h1>fORMULAIRE D'INSCRIPTION</h1>
-        <form action="#!">
+    <div class="containt">
+        
+        <h1>Formulaire d'inscription</h1>
 
-          <label for="specialite">Email</label>
-          <input type="text" id="Email" name="Email" placeholder="">
+        <form action="#">
+            <label for="nom">Nom</label>
+            <input type="text" id="Nom">
 
-          <label for="nom">Nom</label>
-          <input type="text" id="nom" placeholder="">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="">
 
-          <label for="prenom">Prénom</label>
-          <input type="text" id="prenom" name="prenom" placeholder="">
+            <label for="Email">Email</label>
+            <input type="text" id="Email" name="Email" placeholder="">
 
-          <label for="nationalite">N° De Téléphone</label>
-          <input type="number" id="N° De Téléphone" name="N° De Téléphone" placeholder="">
+            <label for="number">N°de telephone</label>
+            <input type="number" id="N° De Téléphone" name="N° De Téléphone" placeholder="">
 
-          <label for="specialite">Mot de passe</label>
-          <input type="text" id="Mot de passe" name="Mot de passe" placeholder="">
+            <label for="Mot de passe">Mot de passe</label>
+            <input type="password"  id="Mot de passe" name="Mot de passe" placeholder="">
 
-          <label for="specialite">Confirmer Mot de passe</label>
-          <input type="text" id="Confirmer Mot de passee" name="Confirmer Mot de passe" placeholder="">
-          
-          <input type="button" value="Envoyer">
+            <label for="Confirme mot de passe">Confirmez votre mot de passe</label>
+            <input type="password" id="confirme mot de passe" name="Conformeez votre mot de passe">
+
+            <button class="btn" type="submit"><a href="../Corporates/Connexion.html">Valider</a></button>
+
+            
         </form>
-      </div>
-    
+        
+    </div>
 </body>
 </html>
