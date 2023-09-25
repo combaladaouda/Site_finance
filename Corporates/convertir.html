@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Assets/css/convertir.css">
     <title>convertiseur</title>
+
+    <header>
+        <nav class="top-nav">
+            <div>
+              <h1><a href="./convertir.html">INOVA_WALLET</a></h1>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <ul class="menu">
+              <li><a href="./acceuil.html">A propos</a></li>
+              <li><a href="./acceuil.html">Services</a></li>
+              <li><a href="../Corporates/portefeuille.html">Portefeuille</a></li>
+            </ul>
+          </nav>
+    </header>
+
 </head>
 <body>
+
+    
     
     <div class="cadre">
-        <h1>Convertisseur</h1>
-
+       <!-- <div class="titre"> <h1>Convertisseur</h1></div>
+ -->
         <div class="content"> 
 
            <label for="pet-select"></label>
@@ -28,17 +48,18 @@
             
             <select name="Monnaie" id="okk">
                 <option value="">Monnaie</option>
-                <option value="FCFA">Fcfa</option>
+                <option value="FCFA">XOF - Franc CFA</option>
                 <option value="Euros">Euros</option>
                 <option value="Dollars">Dollars</option>
             </select>
         </div>
 
         <div class="cont2">
-            <input type="number">
+            <input type="number" id="input-eurgbp" step="0.00001" value="1">
             <img src="../Assets/images/echange.png" alt="">
 
-            <input type="text">
+            <input type="number" id="input-gbpeur" step="0.00001" value="130000"
+            data-taux="130000">
         </div>
 
         <div class="cl">
@@ -46,13 +67,22 @@
         </div>
 
         <div class="confirm">
-          <a href=""><button><p class="bt">Transfert vers sold local</p></button></a>  
+          <a href="./transfert.html"><button><p class="bt">Transfert vers sold local</p></button></a>  
         </div>
 
-        
+            
+<footer>
+    <div class="foot">
+        <div class="trait">
+            <div class="trait-reel"></div>
+            <div class="nom"><h3>INOVA_WALLET © 2023</h3></div>
+        </div>
 
-       
     </div>
+</footer>
+    </div>
+
+ <script src="../javascript/convertir.js"></script>
 </body>
 </html>
 

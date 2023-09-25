@@ -3,18 +3,184 @@
     padding: 0;
 }
 
-.cadre{
+
+/* @import url(https://fonts.googleapis.com/css?family=Raleway); */
+
+html, body {
+    margin: 0;
+    height: 100%;
+  } 
+  
+   * {
+    font-family: sans-serif;
+    box-sizing: border-box; 
+  } 
+  
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #00BAF0; */
+    /* background: linear-gradient(to left, #f46b45, #eea849); */
+    background-color: black;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+    width: 100%;
+    /* position: fixed; */
+  }
+
+  .top-nav h1 a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu  li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .menu li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu li a:hover{
+    background: rgba(0, 0, 255, 0.429);
+  }
+
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
     
-     width: 900px;
-     height: 500px;
-     background-color: rgb(107, 201, 53);
-     margin: 0 auto;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+     /*  border: 1px solid #333; */
+     border: 1px solid white;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+     /*  background-color: #222; */
+      background-color: black;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
 }
 
-h1{
+body{
+    background-color: rgb(250, 156, 14);
+}
+.cadre{
+     
+    
+    
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+   
+    /*  width: 900px;
+     height: auto;
+     background-color: yellow;
+     margin: 0 auto; */
+}
+
+.titre{
+    width: 30%;
+    border: 1px solid red;
     text-align: center;
     
 }
+
+
+    
+
 
 
 .content{
@@ -38,13 +204,20 @@ img{
     width:60px;
     padding: 10px;
     display: flex;
-    margin-top: 40px;
+    margin-top: 50px;
     
+}
+
+select{
+    font-size: 20px;
+   
+
 }
 
 .cont2{
     justify-content: center;
     display: flex;
+    
 }
 
 input{
@@ -53,6 +226,9 @@ input{
     border-radius: 10px;
     border: 1px solid white;
     margin-top: 50px;
+    font-size: 38px;
+    margin-right: 10px;
+    text-align: right;
 }
 .cl{
     justify-content: center;
@@ -92,3 +268,37 @@ button:hover{
     font-weight: bold;
 }
 
+
+.foot{
+    /* border: 1px solid red;  */
+    width: 100%;
+   height: 10rem;
+   background-color: rgb(0, 0, 0);
+   margin-top: 1.8rem;
+}
+
+footer{
+   width: 100%;
+}
+
+.trait{
+   height: 3rem;
+   margin: 0 auto;
+   width: 70%;
+   /* border: 1px solid yellow;   */
+   padding-top: 1rem;
+}
+
+.trait .trait-reel {
+   width: 100%;
+   /* background-color: blue; */
+   height: 0.1rem;
+   background-color: white;
+   margin-top: 3rem;
+}
+.nom h3{
+   margin-top: 2rem;
+   color: white;
+   text-align: center;
+   font-size: 1rem;
+}
