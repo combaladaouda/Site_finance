@@ -25,7 +25,7 @@ html, body {
     background-color: black;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFF;
-    height: 80px;
+    height: 50px;
     padding: 1em;
     width: 100%;
     /* position: fixed; */
@@ -164,15 +164,13 @@ body{
     margin-top: 1rem;
 }
 
-h1{
-    text-align: center;
-    font-size: 2rem;
-    
+.principal #locale{
+  text-align: center;
+    font-size: 2.5rem;
 }
 
-p{
-    text-align: center;
-   
+.principal #ss{
+  text-align: center;
     font-size: 2.5rem;
 }
 

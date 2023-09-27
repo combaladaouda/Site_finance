@@ -24,3 +24,4 @@ btn.addEventListener('click',(e)=>{
                  window.location.href ="./connexion.html"
             }})
 })
+

@@ -14,7 +14,6 @@ btn.addEventListener('click', (e)=>{
     const motdepasse = document.querySelector("#motdepasse").value;
     const confirmation = document.querySelector("#confirmation").value;
 
-
     const data = {
         
         nom: nom,
@@ -56,5 +55,14 @@ btn.addEventListener('click', (e)=>{
             console.log(element.nom);
         })
     }
- 
+
 });
+
+/* 
+const fond = document.querySelector("#balnace");
+console.log(fond);
+const tableau = localStorage.getItem("fondInitial") ? JSON.parse(localStorage.getItem("fondInitial")) : [];
+tableau.push(fond);
+
+localStorage.setItem('fondInitial',JSON.stringify(tableau));
+ */

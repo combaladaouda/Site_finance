@@ -157,9 +157,6 @@ body{
     background-color: rgb(250, 156, 14);
 }
 .cadre{
-     
-    
-    
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -177,12 +174,6 @@ body{
     text-align: center;
     
 }
-
-
-    
-
-
-
 .content{
     
     /* align-items: center;  */
@@ -210,8 +201,6 @@ img{
 
 select{
     font-size: 20px;
-   
-
 }
 
 .cont2{

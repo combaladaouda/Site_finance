@@ -44,11 +44,12 @@ body{
     background-color: rgb(10, 10, 10);
 }
 
-.contenue h5{
+.contenue #balance{
     color: white;
     text-align: center;
     font-size: 2rem;
 }
+
 .contenue h5 a{
     text-decoration: none;
     color: white;
