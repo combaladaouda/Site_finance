@@ -16,17 +16,19 @@
             <div class='menu-button'></div>
           </label>
             <ul class="menu">
-              <li><a href="./acceuil.html">A propos</a></li>
+                <li><a href="" id="aff"></a></li>
               <li><a href="./acceuil.html">Services</a></li>
               <li><a href="../Corporates/portefeuille.html">Portefeuille</a></li>
+              <li><a href="../index.html" >Deconexion</a></li> 
+              
             </ul>
           </nav>
     </header>
 </head>
 <body>
     <div class="principal">
-        <div id="ss">Solde Local</div>
-        <div id="locale">Solde Local <br>0 FCFA</div> 
+        <div id="ss">SOLDE EN FCFA</div>
+        <div id="locale">Solde Local <br>0 </div> 
         <!-- <h1>SOLDE EN FCFA</h1>
         <p>1.950.554</p> -->
 
@@ -40,20 +42,46 @@
         </div>
 
         <div class="inp">
-            <a href=""> <button>Envoyer</button></a>
+            <a href="#popup5"> <button >Envoyer</button></a>
         </div>
-    </div>          
-<footer>
-    <div class="foot">
-        <div class="trait">
-            <div class="trait-reel"></div>
-            <div class="nom"><h3>INOVA_WALLET © 2023</h3></div>
+    </div>     
+              
+    <footer>
+        <div class="foot">
+            <div class="trait">
+                <div class="trait-reel"></div>
+                <div class="nom"><h3>INOVA_WALLET © 2023</h3></div>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer> 
+
+    <div class="pop">
+        
+        <div id="popup5" class="popup-container popup-style-5">
+            <div class="popup-content">
+            <a href="#" class="close">&times;</a>
+            <form action="" class="monformulaire">
+                <div class="mes-input-de-connexion">
+                    <div class="carimage">
+                        <img src="../Assets/images/verifier.jpg" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="phrase-devalide">
+                        <span>Opperation effectuer avec succes.</span>
+                    </div>
+                    
+                </div>
+            </form>
+            </div>
+        </div>
+   </div>
+
+   
+    
+
 
 
 
 <script src="../javascript/slocal.js"></script>
+<script src="../javascript/affiche.js"></script>
 </body>
 </html>

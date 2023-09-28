@@ -58,11 +58,11 @@ btn.addEventListener('click', (e)=>{
 
 });
 
-/* 
-const fond = document.querySelector("#balnace");
+
+/* const fond = document.querySelector("#balnace");
 console.log(fond);
 const tableau = localStorage.getItem("fondInitial") ? JSON.parse(localStorage.getItem("fondInitial")) : [];
 tableau.push(fond);
 
 localStorage.setItem('fondInitial',JSON.stringify(tableau));
- */
+  */
