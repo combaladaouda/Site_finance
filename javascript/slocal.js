@@ -14,8 +14,9 @@ if(button){
     
         localStorage.setItem('soldLocale',JSON.stringify(tab));
     
-        window.location.href ='./corporates/transfert.html'
-        
+        //window.location.href ='./corporates/transfert.html'
+
+        window. location.href = "../corporates/transfert.html"
         
     })
 }
