@@ -16,7 +16,9 @@ if(button){
     
         //window.location.href ='./corporates/transfert.html'
 
-        window. location.href = "../corporates/transfert.html"
+        //window. location.href = "../corporates/transfert.html"
+
+        window. location.href = "../transfert.html"
         
     })
 }
